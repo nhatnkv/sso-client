@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <%- @tasks.each do |task| %>
+    <tr>
+      <td><%= task['name'] %></td>
+      <td><%= task['created_at'] %></td>
+    </tr>
+  <% end %>
+</table>
